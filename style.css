@@ -69,7 +69,7 @@
 button {
   padding: 10px 20px;
   border: none;
-  background-color: #2bff0054;
+  background-color: #3882f6;
   color: white;
   font-size: 1rem;
   border-radius: 5px;
@@ -95,4 +95,37 @@ button {
   max-width: 500px;
 }
 
+.headerTwo {
+  margin: 75px 0;     /* Adds space above and below */
+  color: black;       /* Sets the text color to black */
+  text-align: center; /* Centers the text */
+  font: 900 36px 'Roboto', sans-serif , bold; /* Font properties */
+}
 
+.containerTwo {
+  display: flex;           /* Aligns items in a row */
+  justify-content: center; /* Centers the divs horizontally */
+  gap: 20px;               /* Adds space between the boxes */
+ padding-bottom: 100px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;  /* Stacks image and text vertically */
+  align-items: center;     /* Centers them */
+  text-align: center;
+}
+
+.box img {
+  width: 200px;  /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%;  /* Makes the image round */
+  object-fit: cover;   /* Ensures the image maintains its shape */
+}
+
+.box p {
+max-width: 200px;
+font: 0.25rem;;
+
+
+}
