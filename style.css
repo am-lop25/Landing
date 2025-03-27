@@ -16,7 +16,6 @@
 
 /* Main header on the left */
 .main-header {
-  font-size: 2.5rem;
   color: aliceblue;
 }
 
@@ -30,4 +29,70 @@
 .sub-headers h2 {
   font-size: 1.5rem;
 }
+
+.sub-headers a {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Makes the text color same as the parent (header) */
+}
+
+/* Container for text + image */
+.content-container {
+  display: flex; /* Aligns children (text and image) horizontally */
+  align-items: center; /* Vertically centers items */
+  justify-content: center; /* Adds space between text and image */
+  width: 100%; /* Adjust width as needed */
+  padding: 30px;
+  min-height: 400px;
+  background-color: #1F2937;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column; /* Stacks h2, p, button vertically */
+  gap: 15px; /* Adds space between elements */
+  max-width: 50%; /* Limits text width */
+  padding-right: 1500px;
+}
+
+
+.content-container .text-box {
+  font-size: 1.5rem;  /* Adjust font size */
+  font-weight: bold;  /* Make the text bold */
+  line-height: 1.6;   /* Control line spacing */
+  color: #fff6f6;        /* Text color */
+  padding: 10px;      /* Space inside the box */
+  text-align: center; /* Center text if needed */
+}
+
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #2bff0054;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 250px;
+  height: auto;
+  
+}
+
+.content-container .text-box p {
+  font-size: o.5rem;    /* Adjust font size for the paragraph */
+  color: #f7f5f5;        /* Slightly lighter color for paragraph */
+  margin-bottom: 20px; /* Space between paragraph and button */
+  line-height: 1.5;    /* Line spacing for readability */
+}
+
+
+/* Image section */
+.image-box img {
+  width: 200%; /* Adjust size as needed */
+  height: auto;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
 
